@@ -1,0 +1,13 @@
+// Retrieve registration data from localStorage
+var registrationData = JSON.parse(localStorage.getItem('registrationData')) || [];
+
+// Display the data on the new page
+var outputElement = document.getElementById('registrationData');
+registrationData.forEach(function (data) {
+  var name = data.name;
+  var email = data.email;
+
+  var entry = document.createElement('p');
+  entry.textContent = 'Name: ' + name + ', Email: ' + email;
+  outputElement.appendChild(entry);
+});
