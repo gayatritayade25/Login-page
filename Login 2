@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .sidebar {
+      background-color: #f8f9fa;
+      height: 100vh;
+    }
+    .content {
+      padding: 20px;
+    }
+    .card {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3 sidebar">
+        <h2>Sidebar</h2>
+        <ul class="list-group">
+          <li class="list-group-item">Dashboard</li>
+          <li class="list-group-item">Products</li>
+          <li class="list-group-item">Orders</li>
+          <li class="list-group-item">Customers</li>
+        </ul>
+      </div>
+      <div class="col-md-9 content">
+        <h2>Dashboard</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Total Sales</h5>
+                <p class="card-text">$10,000</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Total Orders</h5>
+                <p class="card-text">100</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">New Customers</h5>
+                <p class="card-text">10</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Pending Orders</h5>
+                <p class="card-text">5</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
