@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  </head>
+  <body>
+    <h1>
+      local storage demo
+    </h1>
+    <textarea id="mytextarea" rows="10" cols="80">
+    </textarea>
+    <p></p>
+    <button onclick="mysave()">save</button>
+    <button onclick="myload()">retrive</button>
+    <script>
+      function mysave(){
+        var mycontent = document.getElementById("mytextarea").value;
+        localStorage.setItem("mycontent",mycontent);
+      }
+      function myload(){
+        var mycontent = localStorage.getItem("mycontent");
+        document.getElementById("mytextarea").value = mycontent;
+      }
+    </script>
+
+  </body>
+</html>
